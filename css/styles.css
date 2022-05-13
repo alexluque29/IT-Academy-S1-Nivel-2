@@ -2,12 +2,16 @@
   margin: 10px;
   padding: 10px;
   box-sizing: border-box;
-  /* max-width: 1200px; */
+  max-width: 1200px;
 }
 a {
+  display: flex;
   color: rgb(111, 111, 111);
   text-decoration: none;
+  align-items: center;
+  font-weight: bold;
 }
+
 .container {
   display: flex; 
   flex-flow: column nowrap;
@@ -15,11 +19,11 @@ a {
 
 .header {
   display: flex;
-  background: url(images/header.jpg);
-  flex-flow: column nowrap;
+  background: url(../images/header.jpg);
   background-position: center;
   background-attachment: contain;
   background-size: cover;
+  flex-flow: column nowrap;
   
 }
 .menu {
@@ -29,20 +33,25 @@ a {
   align-items: center;
 }
 .log1 {
+  display: flex;
   flex: 1 1 auto;
 }
 .log2 {
   display: flex;
   flex: 5 1 auto;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   color: rgb(113, 0, 0);
   height: 50px;
-}
+  }
+   .log2 a:hover{
+    color: #bf4508
+   }
 .log3 {
   display: flex;
   flex: 1 1 auto;
   align-items: center;
+  justify-content: end;
   height: 50px;
             }
 .texto {
