@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 10px;
   box-sizing: border-box;
-  max-width: 1200px;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -12,6 +11,7 @@ a {
   text-decoration: none;  
 }
 .padre{
+max-width: 1200px;
 display: flex;
 flex-flow: column nowrap;
 }
@@ -32,18 +32,18 @@ flex-flow: column nowrap;
     .logo{
       flex: 1 1 auto;
     }
-    .imagenlogo{
-      height: auto;
-      width: auto;
-      max-height: 100px;
-      max-width: 100px;
-    }   
-      .nav{
-        display: flex;
-        flex: 5 1 auto;
-        align-items: center;
-        justify-content:space-around;
-      }
+      .imagenlogo{
+        height: auto;
+        width: auto;
+        max-height: 100px;
+        max-width: 100px;
+      }   
+    .nav{
+      display: flex;
+      flex: 5 1 auto;
+      align-items: center;
+      justify-content:space-around;
+    }
       .nav a:hover{
         color: #bf4508
       }
@@ -53,61 +53,57 @@ flex-flow: column nowrap;
         color: rgb(110, 110, 110);
         padding: 0 10px;
         letter-spacing: 2;      
-      }
-      
+      }      
       .social{
         flex: 1 1 auto;
         display: flex;
         justify-content:flex-end;
-      }
-      
+      }      
         .social a{
         color: rgb(110, 110, 110);
         padding: 0 10px;
-        }
-        
+        }        
         .social a:hover{
           color: #bf4508
         }
-          .texto{
-            height: 200px;
-          }
-          h1{
-            display: flex;
+        .texto{
+           height: 200px;
+        }
+          .texto h1{
             font-family: 'Lora', serif;
             font-size: 19px;
             text-align: center;
-            align-items: flex end;
-            color: rgba(233, 72, 3, 0.708);
+           color: rgba(233, 72, 3, 0.6);
             }
 
   .section {
-    background: white;
+    background: #d8d7d7;
+      border-top: 10px solid white;
+    border-bottom: 10px solid white;
     display: flex;
   }
-  .articulos {
+    .articulos {
       background: rgb(216, 216, 216);
       flex: 2 1 auto;
       display: flex;
       flex-flow: row wrap;
-    }
-      .article {
-        /* background: #1F6CB0; */
-        flex: 1 1 40%;
-        color: #444;
-        font-size: 12px;
-        letter-spacing: 1px;
-        margin: 10px 10px 0 0px;
-        flex: 1 1 45%;
-        background: #ececec;
       }
-      .article img{
-        width: 100%;        
-      }
-      .imagenarticulos {
-        width:320px ;
-        height:225px ;
-      }
+        .article {
+          background: #f5f1f1;
+          flex: 1 1 40%;
+          color: #444;
+          font-size: 12px;
+          letter-spacing: 1px;
+          margin: 5px 5px 10px 5px;
+          flex: 1 1 45%;
+        }   
+          .article img{
+            width: 100%;        
+          }
+          .imagenarticulos {
+            width:100px ;
+            height:auto ;
+          }
 
       h3{
         color: #fff;
