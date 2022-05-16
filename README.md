@@ -1,2 +1,1 @@
-# sprint1_nivel2
-Nivel 2 del Sprint 1 React
+# Sprint-1-Nivel-1-Ejercicio-1
