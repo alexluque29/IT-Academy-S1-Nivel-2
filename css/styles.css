@@ -78,9 +78,10 @@ flex-flow: column nowrap;
 
   .section {
     background: #d8d7d7;
-      border-top: 10px solid white;
+    border-top: 10px solid white;
     border-bottom: 10px solid white;
     display: flex;
+    gap:10px;
   }
     .articulos {
       background: rgb(216, 216, 216);
@@ -98,14 +99,10 @@ flex-flow: column nowrap;
           flex: 1 1 45%;
         }   
           .article img{
-            width: 100%;        
+            width: 100%;
+            height :auto;        
           }
-          .imagenarticulos {
-            width:100px ;
-            height:auto ;
-          }
-
-      h3{
+        h3{
         color: #fff;
         font-size: 12px;
         padding: 10px 0;
@@ -132,7 +129,7 @@ flex-flow: column nowrap;
     .aside{
       background: #d8d7d7;
       flex: 1 1 auto;
-      border-left: 10px solid white;
+      /* border-left: 10px solid white; */
     }
       .pub{
         background: #d8d7d7;
