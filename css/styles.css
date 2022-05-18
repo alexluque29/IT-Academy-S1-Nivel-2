@@ -18,7 +18,7 @@ flex-flow: column nowrap;
   .header {
     flex-flow: column nowrap;
     background: url(../images/header.jpg);
-    background-position: center; /* posición centrada */
+    background-position: center;
     background-attachment: contain;
     background-size: cover;
   }
@@ -37,7 +37,18 @@ flex-flow: column nowrap;
         width: auto;
         max-height: 100px;
         max-width: 100px;
-      }   
+        animation-name: animalogo;
+            animation-duration: 4s;
+            animation-delay: 4s;
+            animation-timing-function: ease-in;
+            position: relative;
+      }  
+      @keyframes animalogo {
+        0% {transform: scale(0);}
+        50% {transform: scale(2.5);}
+        100% {transform: scale(0);}
+       
+      }
     .nav{
       display: flex;
       flex: 5 1 auto;
@@ -73,7 +84,21 @@ flex-flow: column nowrap;
             font-family: 'Lora', serif;
             font-size: 19px;
             text-align: center;
-           color: rgba(233, 72, 3, 0.6);
+            color: rgba(233, 72, 3, 0.6);
+            animation-name: animatexto;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+
+            }
+            @keyframes animatexto {
+              from {
+                margin-left: 100%;
+                width: 300%
+              }
+              to {
+                margin-left: 0%;
+                width: 100%;
+              }             
             }
 
   .section {
@@ -115,6 +140,7 @@ flex-flow: column nowrap;
         background:#f08080;
         align-items: center;
         color: #fff;
+        margin-top: 3px;
         }
       
       .navegacion{
@@ -129,7 +155,6 @@ flex-flow: column nowrap;
     .aside{
       background: #d8d7d7;
       flex: 1 1 auto;
-      /* border-left: 10px solid white; */
     }
       .pub{
         background: #d8d7d7;
@@ -139,11 +164,13 @@ flex-flow: column nowrap;
    background:#d8d7d7;
    display: flex;
    justify-content: center;
+   align-items: center;
+   height: 30px;
   }
     .pie{
       background: #f5f1f1;
       width:98%;
-      height: auto;
+      height: 30px;
     }
 
 @media all and (max-width: 768px){
