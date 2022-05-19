@@ -38,18 +38,20 @@ flex-flow: column nowrap;
         max-height: 100px;
         max-width: 100px;
         animation-name: animalogo;
-            animation-duration: 4s;
-            animation-delay: 4s;
-            animation-timing-function: ease-in;
-            position: relative;
+        animation-duration: 4s;            
+        animation-timing-function: ease-out;
+        position: relative;
       }  
       @keyframes animalogo {
-        0% {transform: scale(0);}
-        50% {transform: scale(2.5);}
-        100% {transform: scale(0);}
-       
+        from {
+          margin-left: -100%;
+        }
+        to {
+          margin-left: 0%;
+        }             
       }
-    .nav{
+
+      .nav{
       display: flex;
       flex: 5 1 auto;
       align-items: center;
@@ -78,27 +80,25 @@ flex-flow: column nowrap;
           color: #bf4508
         }
         .texto{
-           height: 200px;
+          display: flex;
+          height: 150px;
+          justify-content: center;
+          align-items: flex-end;
         }
           .texto h1{
             font-family: 'Lora', serif;
-            font-size: 19px;
-            text-align: center;
-            color: rgba(233, 72, 3, 0.6);
+            font-size: 20px;
+            color: rgba(255, 128, 0, 0.750);
             animation-name: animatexto;
             animation-duration: 3s;
+            animation-delay: 4s;
             animation-timing-function: ease-out;
 
             }
             @keyframes animatexto {
-              from {
-                margin-left: 100%;
-                width: 300%
-              }
-              to {
-                margin-left: 0%;
-                width: 100%;
-              }             
+            0% {font-size:20px;}
+            50% {font-size:40px;}
+            100% {font-size:20px;}
             }
 
   .section {
@@ -107,6 +107,7 @@ flex-flow: column nowrap;
     border-bottom: 10px solid white;
     display: flex;
     gap:10px;
+    flex: 1 1 auto;
   }
     .articulos {
       background: rgb(216, 216, 216);
@@ -116,12 +117,11 @@ flex-flow: column nowrap;
       }
         .article {
           background: #f5f1f1;
-          flex: 1 1 40%;
+          flex: 1 1 30%; 
           color: #444;
           font-size: 12px;
           letter-spacing: 1px;
-          margin: 5px 5px 10px 5px;
-          flex: 1 1 45%;
+          margin: 3px 3px 10px 5px;
         }   
           .article img{
             width: 100%;
